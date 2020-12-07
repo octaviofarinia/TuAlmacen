@@ -16,8 +16,9 @@ body {
 datalist {
   display: none;
 }
+
 .bg-primary {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/17.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/17.jpg);
 }
 
 .ALIMENTOS {
@@ -149,8 +150,7 @@ datalist {
 }
 
 .ALIMENTOS1 {
-  background-image: linear-gradient(to right, transparent ,rgba(0, 0, 0.4, 0.3), rgba(0, 0, 0.4, 0.3)), url("../img/1.jpg");
- 
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0.4, 0.3), rgba(0, 0, 0.4, 0.3)), url("../img/1.jpg");
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -161,7 +161,6 @@ datalist {
   text-shadow: 2px 2px 2px white;
   overflow: hidden;
   color: white;
-  
 }
 
 .BEBIDAS1 {
@@ -207,7 +206,7 @@ datalist {
 }
 
 .HERRAMIENTAS1 {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/4.jpg");
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -221,7 +220,7 @@ datalist {
 }
 
 .OTROS1 {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/6.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/6.jpg");
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -233,11 +232,33 @@ datalist {
   overflow: hidden;
   color: white;
 }
+
 .display-4 {
-    padding-top: 50px;
-    /* margin-bottom: 30px; */
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+  padding-top: 50px;
+  /* margin-bottom: 30px; */
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/*probando nuevo dropdown*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
